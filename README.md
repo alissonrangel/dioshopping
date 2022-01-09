@@ -17,7 +17,8 @@
 - Implementação do menu de categorias, ao clicar numa categoria, mostra apenas as camisas desta categoria;
 - Fiz a responsividade do site utilizando as classes do bootstrap e css;
 - Fiz a verificação do email de contato para aceitar emails no formato certo;
-- Troquei alguns componentes do material-ui para tags htmls para usá-las com o bootstrap e css mesmo.
+- Troquei alguns componentes do material-ui para tags htmls para usá-las com o bootstrap e css mesmo;
+- Tive que fazer umas alterações na page contato.js pois estava ocorrendo uns bugs na validação dos inputs.
 
 ### prints das interfaces alteradas por mim
 ![Tela inicial mostrando todas as camisas](https://github.com/alissonrangel/dioshopping/blob/main/src/assets/images/inicial.png?raw=true)
