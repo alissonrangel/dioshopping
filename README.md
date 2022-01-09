@@ -8,7 +8,7 @@
 - Frontend Original
 [GitHub do projeto original do frontend da Nathaly](https://github.com/nathyts/dioshopping)
 
-# Projeto Frontend desenvolvido por mim que está de acordo com a API do backend feita pela especialista Nathaly Sousa
+# Projeto Frontend desenvolvido com base no projeto da Mathaly Sousa, que está de acordo com a API do backend feita pela especialista Nathaly Sousa
 
 ## Alterações feitas por mim:
 - Alteração das cores das interfaces do projeto;
