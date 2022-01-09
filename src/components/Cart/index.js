@@ -1,7 +1,8 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import cartActions from '../store/actions/cart';
-
+import logo from '../../assets/images/shine.gif';
+import './style.css';
 const Cart = () => {
     const cart = useSelector(state => state.cart)
     const dispatch = useDispatch();
@@ -18,7 +19,7 @@ const Cart = () => {
 
     return(
         <>
-            <button type="button" className="btn btn-info" data-bs-toggle="modal" data-bs-target="#CartModal">
+            <button type="button" style={{border: '5px solid blue'}} className="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#CartModal">
                 <span><i className="fas fa-shopping-cart"></i></span>
                 <span className="badge rounded-pill bg-info text-dark">
                     {cart.value}
@@ -26,42 +27,41 @@ const Cart = () => {
             </button>
 
             {/* Modal */}
-            <div className="modal fade" id="CartModal" tabIndex="-1" aria-labelledby="CartModalLabel" aria-hidden="true">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                    <div className="modal-header">
-                    <h5 className="modal-title" id="CartModalLabel">Meu Carrinho</h5>
-                        <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
+            <div className="modal fade" style={{backgroundColor: 'rgba(130,80,255,0.15)'}} id="CartModal" tabIndex="-1" aria-labelledby="CartModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-container modal-container-center" style={{backgroundColor: 'rgba(130,80,255,0.15)'}}>
+                    <div className="modal-content modal-container" >
+                    <div className="modal-header p-2" style={{backgroundColor: 'rgba(130,80,255,0.35)'}}>
+                        {/* <h5 className="modal-title" id="CartModalLabel">Meu Carrinho</h5> */}
+                        <img src={logo} alt="Logotipo da store" />                        
+                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
-                    <div className="modal-body table-responsive">
+                    <div className="modal-body table-responsive fontes modal-container" style={{backgroundColor: 'rgba(130,80,255,0.15)'}}>
                         <table className="table table-hover">
-                        <thead>
-                            <tr>
+                        <thead >
+                            <tr >
                             <th scope="col"></th>
                             <th scope="col">Produto</th>
                             <th scope="col">Qtd</th>
-                            <th scope="col">Preço</th>
+                            <th scope="col">Preço R$</th>
                             <th scope="col"></th>
                             <th scope="col"></th>
-                            <th scope="col">Total</th>
+                            <th scope="col">Total R$</th>
                             </tr>
                         </thead>
                         <tbody>
                             {cart.Cart.map( item =>{
                                 return(
-                                    <tr key={item.id}>
-                                        <th><button onClick={()=>dispatch(cartActions.DeleteItem(cart, item))} className="badge bg-danger"><i className="fas fa-window-close"></i></button></th>
+                                    <tr key={item.id} style={{lineHeight: '50px'}}>
+                                        <th><button onClick={()=>dispatch(cartActions.DeleteItem(cart, item))} className="p-1 m-1 badge btn-outline-danger btn-colors-danger"><i className="fas fa-window-close"></i></button></th>
                                         <th><img className="img-fluid img-thumbnail" src={item.image} alt={item.Name} width="50px"/></th>
                                         <th><span className="badge badge-pill bg-warning">
                                             {item.quantity}
                                         </span></th>
-                                        <th>R$ {item.price.toFixed(2)}</th>
-                                        <th><button onClick={()=>dispatch(cartActions.AddItem(cart, item))} className="badge badge-pill bg-primary"><i className="fas fa-plus"></i></button></th>
-                                        <th><button onClick={()=>dispatch(cartActions.RemoveItem(cart, item))} className="badge badge-pill bg-danger"><i className="fas fa-minus"></i></button></th>
-                                        <th>R$ {(item.price * item.quantity).toFixed(2)}</th>
+                                        <th>{item.price.toFixed(2)}</th>
+                                        <th><button onClick={()=>dispatch(cartActions.AddItem(cart, item))} className="badge badge-pill btn btn-outline-primary btn-colors-primary"><i className="fas fa-plus"></i></button></th>
+                                        <th><button onClick={()=>dispatch(cartActions.RemoveItem(cart, item))} className="badge badge-pill btn-outline-warning btn-colors-warning"><i className="fas fa-minus"></i></button></th>
+                                        <th>{(item.price * item.quantity).toFixed(2)}</th>
                                     </tr>
                                 )
                             })}
@@ -74,8 +74,8 @@ const Cart = () => {
                         </table>
                         </div>
 
-                    <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <div className="modal-footer modal-container" style={{backgroundColor: 'rgba(130,80,255,0.65)'}}>
+                        <button type="button" style={{border: '5px solid blue'}} className="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
                     </div>
                     </div>
                 </div>

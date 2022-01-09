@@ -1,0 +1,54 @@
+.btn-colors-primary{
+  background-color: white;
+  color: blue;
+}
+
+.btn-colors-primary:hover{
+  background-color: blue;
+  color: white;
+}
+
+.btn-colors-warning{
+  background-color: white;
+  color: #ffc107;
+}
+
+.btn-colors-warning:hover{
+  background-color: #ffc107;
+  color: white;
+}
+
+.btn-colors-danger{
+  background-color: white;
+  color: #dc3545;
+}
+
+.btn-colors-danger:hover{
+  background-color: #dc3545;
+  color: white;
+}
+
+@media (max-width: 500px) { 
+  .modal-container{
+     width: 320px;
+     padding: 0;
+     margin: 0;
+  }
+  .modal-container-center{
+    text-align: center;
+    display: flex;
+    margin: auto auto;
+  }
+  .fontes{
+    font-size: 12px;
+  }
+  th{
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 501px) { 
+  .modal-container{
+    width: auto;
+  }
+}

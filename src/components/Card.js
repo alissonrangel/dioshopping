@@ -16,12 +16,12 @@ const Card = ({ product, children }) => {
     const classes = useStyles();
 
     return(
-        <Grid item xs={3}>
+        <div >
             <Paper className={classes.paper}>
                 <Grid container direction='column'>
                     <Grid item>
                     <img width="140px" src={product.image} alt={product.name_product}/>
-                    <Typography variant='h6'>
+                    <Typography variant='h6' style={{fontFamily: 'cursive', color:'#Ac72ff'}}>
                         {children}
                     </Typography>
                     <Typography variant='subtitle1'>
@@ -32,12 +32,13 @@ const Card = ({ product, children }) => {
                 <Button 
                     variant="contained"
                     onClick={()=>dispatch(cartActions.Add(cart, product))}
+                    style={{backgroundColor:'#Ac72ff'}}
                 >
                     Adicionar
                 </Button>
                 </Grid>
             </Paper>
-        </Grid>
+        </div>
     )
 }
 

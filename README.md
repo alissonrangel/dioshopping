@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Projeto para o Bootcamp de React e Node da DIO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Integrando um Backend e um Frontend em React para um E-commerce
 
-## Available Scripts
+# Projetos bases feitos pela Especialista Nathaly Sousa
+- Backend Original
+[GitHub do projeto original do backend da Nathaly](https://github.com/nathyts/api-dioshopping)
+- Frontend Original
+[GitHub do projeto original do frontend da Nathaly](https://github.com/nathyts/dioshopping)
 
-In the project directory, you can run:
+# Projeto Frontend desenvolvido por mim que está de acordo com a API do backend feita pela especialista Nathaly Sousa
 
-### `yarn start`
+## Alterações feitas por mim:
+- Alteração das cores das interfaces do projeto;
+- Criação de uma logo para o dio shopping;
+- Criação de um favicon.ico para o projeto;
+- Implementação do menu de categorias, ao clicar numa categoria, mostra apenas as camisas desta categoria;
+- Fiz a responsividade do site utilizando as classes do bootstrap e css;
+- Fiz a verificação do email de contato para aceitar emails no formato certo;
+- Troquei alguns componentes do material-ui para tags htmls para usá-las com o bootstrap e css mesmo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### prints das interfaces alteradas por mim
+![Tela inicial mostrando todas as camisas](https://github.com/alissonrangel/dioshopping/blob/main/src/images/inicial.png?raw=true)
+![Tela inicial mostrando apenas as camisas de seleções nacionais](https://github.com/alissonrangel/dioshopping/blob/main/src/images/inicial2.png?raw=true)
+![Tela mostrando o carrinho de compras](https://github.com/alissonrangel/dioshopping/blob/main/src/images/cart.png?raw=true)
+![Tela inicial mostrando a tela de contato](https://github.com/alissonrangel/dioshopping/blob/main/src/images/contato.png?raw=true)

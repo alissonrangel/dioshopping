@@ -1,0 +1,22 @@
+.item-colors {
+  color: #8c52ff;
+  text-shadow: 1px 1px 2px #5c32ff;
+  font-family: cursive;
+  background-color: #cca2ff;
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+
+.item-colors:hover {
+  color: #cca2ff;
+  text-shadow: 1px 1px 2px #cca2ff;
+  font-family: cursive;
+  background-color: #8c52ff;
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
