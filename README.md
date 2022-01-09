@@ -20,7 +20,7 @@
 - Troquei alguns componentes do material-ui para tags htmls para usá-las com o bootstrap e css mesmo.
 
 ### prints das interfaces alteradas por mim
-![Tela inicial mostrando todas as camisas](https://github.com/alissonrangel/dioshopping/blob/main/src/images/inicial.png?raw=true)
-![Tela inicial mostrando apenas as camisas de seleções nacionais](https://github.com/alissonrangel/dioshopping/blob/main/src/images/inicial2.png?raw=true)
-![Tela mostrando o carrinho de compras](https://github.com/alissonrangel/dioshopping/blob/main/src/images/cart.png?raw=true)
-![Tela inicial mostrando a tela de contato](https://github.com/alissonrangel/dioshopping/blob/main/src/images/contato.png?raw=true)
+![Tela inicial mostrando todas as camisas](https://github.com/alissonrangel/dioshopping/tree/main/src/images/inicial.png)
+![Tela inicial mostrando apenas as camisas de seleções nacionais](https://github.com/alissonrangel/dioshopping/tree/main/src/images/inicial2.png)
+![Tela mostrando o carrinho de compras](https://github.com/alissonrangel/dioshopping/tree/main/src/assets/images/cart.png)
+![Tela inicial mostrando a tela de contato](https://github.com/alissonrangel/dioshopping/tree/main/src/images/contato.png)
